@@ -110,8 +110,31 @@
 		</div>
 		<div class="w" style="float: left;width: 100px">
 			<form>
-				<div class="v" style="float: left;width: 90px"><input type="name" name="name" placeholder="Name"></div><br>
-				<div class="v" style="float: left;width: 90px"><input type="Email" name="Email" placeholder="Email"></div>
+				<table>
+					<tr style="width: 800px;">
+						<td>
+							<div class="v" style="width: 50px;margin:3px"><input type="name" name="name" placeholder="Name"></div><br>
+						</td>
+						<td>
+							<div class="v" style="width: 50px;margin:3px"><input type="Email" name="Email" placeholder="Email"></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="v" style="width:200px "><input type="text" placeholder="Message" style="width: 200px"></input></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button id="submit">Submit</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p id="message_success"></p>
+						</td>
+					</tr>
+				</table>
 			</form>
 		</div>
 	</div>
