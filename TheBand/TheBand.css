@@ -10,30 +10,40 @@ ul.navbar{
 li.li{
 	float: left;
 }
-li.li a{
+li.li a.nav_entry{
 	background-color: black;
 	display: block;
 	padding: 14px 16px;
 	color: white;
 	text-decoration: none;
+	font-size: 1vw;
 	border: none;
 }
-li.li a:hover{
+li.li a.nav_entry:hover{
 	color: black;
 	text-decoration: none;
 	background-color: gray;
 }
+a.style{
+	color: black;
+	background-color: white;
+}
+a.style:hover{
+	background-color: gray;
+
+}
 .dropbtn {
   background-color: black;
+  display: block;
   color: white;
-  padding: 14px 16px;
-  font-size: 16px;
+  padding: 0%;
+  font-size: 1vw;
   border: none;
   cursor: pointer;
 }
 
 .dropdown {
-  position: relative;
+  position: relative;	
   display: inline-block;
 }
 
@@ -69,10 +79,12 @@ a.search:hover{
 }
 div.imgtext{
 	position: absolute;
-	top: 570px;
-	margin-left: 600px;
-	margin-right: auto;
+	top:43vw;
 	color: white;
+	text-align: center;
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
 }
 p.b{
 	margin-left:400px;
@@ -168,3 +180,11 @@ input[type=Email] {
 input[type=Email]:focus{
 	border-color: lightgreen; 
 }
+button.submit{
+	border: none;
+	background-color: blue;
+	color: cornsilk;
+}
+
+
+

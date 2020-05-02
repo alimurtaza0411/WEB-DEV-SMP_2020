@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Band</title>
 	<link rel="stylesheet" type="text/css" href="TheBand.css"> 
 	<script src="https://kit.fontawesome.com/d7b1c28ef0.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 	<div style="background-color: black">
 		<ul class="navbar">
-			<li class="li"><a href="">HOME</a></li>
-			<li class="li"><a href="">BAND</a></li>
-			<li class="li"><a href="">MORE<i class="fas fa-"></i></a></li>
-			<li class="li"><a href="">CONTACT</a></li>
+			<li class="li"><a href="" class="nav_entry">HOME</a></li>
+			<li class="li"><a href="" class="nav_entry">BAND</a></li>
+			<li class="li"><a href="" class="nav_entry">MORE<i class="fa fa-ccaret-down"></i></a></li>
+			<li class="li"><a href="" class="nav_entry">CONTACT</a></li>
 			<li class="li">
 				<div class="dropdown">
-					<button class="dropbtn">MORE</button>
+					<button class="dropbtn"><a href="" class="nav_entry">MORE</a></button>
 					<div class="dropdown-content">
-						<a href="#" style="background-color: white;color: black" class="style">Merchandise</a>
-						<a href="#" style="background-color: white;color: black" class="style">Extras</a>
-						<a href="#" style="background-color: white;color: black" class="style">Media</a>
+						<a href="#" class="style">Merchandise</a>
+						<a href="#" class="style">Extras</a>
+						<a href="#"  class="style">Media</a>
 					</div>
 				</div>
 			</li>
-			<li class="li" style="float: right;padding-left: 1050px;background-color: black "><a href="" class="search"><i class="fas fa-search"></i></a></li>
+		<li class="li" style="background-color: black;"><a href="" class="nav_entry"><i class="fas fa-search"></i></a></li>
 		</ul>
 	</div>
-	<img src="C:/Users/91735/Desktop/demo1.jpg" style="width: 1520px; height: 700px">
+	<img src="demo1.jpg" style="width: 100%; height: auto">
 	<div class="imgtext">
-		<h2 align="center" style="font-family: sans-serif;">New York</h2>
-		<h4>The atmosphere here in New York is awesome</h4>
+		<div align="center" style="font-family: sans-serif;font-size: 2.5vw;">New York</div>
+		<div style="font-size: 1.5vw;">The atmosphere here in New York is awesome</div>
 	</div>
 	<div classs="theband" >
 		<br>
@@ -40,15 +42,15 @@
 	<div class="c">
 	<div class="a">
 		<p align="center">Name</p>
-		<img src="C:/Users/91735/Desktop/demo3.jpg" style="height: 150px">
+		<img src="demo3.jpg" style="height: 150px">
 	</div>
 	<div class="a">
 		<p align="center">Name</p>
-		<img src="C:/Users/91735/Desktop/demo3.jpg" style="height: 150px">
+		<img src="demo3.jpg" style="height: 150px">
 	</div>
 	<div class="a">
 		<p align="center">Name</p>
-		<img src="C:/Users/91735/Desktop/demo3.jpg" style="height: 150px">
+		<img src="demo3.jpg" style="height: 150px">
 	</div>
 	</div>
 	<br style="clear:both" />
@@ -69,7 +71,7 @@
 	<br style="clear:both" />
 	<div class="temp" style="margin-left: 350px">
 		<div class="t">
-		<img src="C:/Users/91735/Desktop/demo4.jpg" style="height: 170px;width: 250px;padding-left: 0px">
+		<img src="demo4.jpg" style="height: 170px;width: 250px;padding-left: 0px">
 		<h3 style="padding-left: 10px "><b>New York</b></h3>
 		<h3 style="opacity: 0.2;padding-left: 10px">Fri 27 Nov 2020</h3>
 		<p style="padding-left: 10px ">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
@@ -78,7 +80,7 @@
 	</div>
 	<div class="temp" >
 		<div class="t">
-		<img src="C:/Users/91735/Desktop/demo5.jpg" style="height: 170px;width: 250px;padding-left: 0px">
+		<img src="demo5.jpg" style="height: 170px;width: 250px;padding-left: 0px">
 		<h3 style="padding-left: 10px "><b>Paris</b></h3>
 		<h3 style="opacity: 0.2;padding-left: 10px">Sat 28 Nov 2020</h3>
 		<p style="padding-left: 10px ">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
@@ -87,7 +89,7 @@
 	</div>
 	<div class="temp">
 		<div class="t">
-		<img src="C:/Users/91735/Desktop/demo6.jpg" style="height: 170px;width: 250px;padding-left: 0px">
+		<img src="demo6.jpg" style="height: 170px;width: 250px;padding-left: 0px">
 		<h3 style="padding-left: 10px "><b>San Francisco</b></h3>
 		<h3 style="opacity: 0.2;padding-left: 10px">Sun 29 Nov 2020</h3>
 		<p style="padding-left: 10px ">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
@@ -109,24 +111,24 @@
 			<i class="fa fa-envelope"></i>   Email: mail@mail.com<br>
 		</div>
 		<div class="w" style="float: left;width: 100px">
-			<form>
+			<form onsubmit="return false">
 				<table>
 					<tr style="width: 800px;">
 						<td>
-							<div class="v" style="width: 50px;margin:3px"><input type="name" name="name" placeholder="Name"></div><br>
+							<div class="v" style="width: 50px"><input type="name" id="inp1" name="name" placeholder="Name"></div><br>
 						</td>
 						<td>
-							<div class="v" style="width: 50px;margin:3px"><input type="Email" name="Email" placeholder="Email"></div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="v" style="width:200px "><input type="text" placeholder="Message" style="width: 200px"></input></div>
+							<div class="v" style="width: 50px"><input type="Email" id="inp2" name="Email" placeholder="Email"></div>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<button id="submit">Submit</button>
+							<div class="v" style="width:200px "><input type="text" id="inp3" placeholder="Message" style="width: 200px; box-sizing: unset;"></input></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button onclick="document.getElementById('message_success').innerHTML='message is recorded'; document.getElementById('inp1').value='';document.getElementById('inp2').value='';document.getElementById('inp3').value='' " id="submit" style="background-color:royalblue;color: cornsilk;border: none;font-size: 16px; padding: 10px;">Submit</button>
 						</td>
 					</tr>
 					<tr>
@@ -138,7 +140,7 @@
 			</form>
 		</div>
 	</div>
-	<img src="C:/Users/91735/Desktop/demo2.jpg" style="width: 1520px">
+	<img src="demo2.jpg" style="width: 1520px">
 	<br>
 	<br>
 	<br>
