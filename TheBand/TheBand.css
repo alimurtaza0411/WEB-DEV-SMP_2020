@@ -86,25 +86,33 @@ div.imgtext{
 	margin-left: 35%;
 	margin-right: 35%;
 }
+div.thebnad{
+	width: 60%;
+}
 p.b{
-	margin-left:400px;
-	margin-right: 400px; 
+	margin-left:20%;
+	margin-right: 30%; 
 	text-align: justify;
 }
 div.a{
 	display: block;
-	padding: 20px;
+	padding: 1%;
 	float: left;
 }
 div.c{
-	margin-left: 450px;
+	padding-left: 8%;
+	padding-right: 8%;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 div.temp{
-	width: 250px;
+	width: 17%;
+	height: 15vw;
 	float: left;
 	background-color: black;
 	display: block;
-	padding: 10px;
+	padding: 1%;
 }
 div.t{
 	background-color: white;
@@ -117,12 +125,12 @@ button.btn{
 	background-color: black;
 	border: none; 
 	color: white ;
-	margin-bottom: 10px;
-	margin-left: 10px;
+	margin-bottom: 0.5vw;
+	margin-left: 1%;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 1.5vw;
 	align-content: center;
-	padding: 10px;
+	padding: 2%;
 }
 button.btn:hover{
 	background-color: gray;
@@ -131,9 +139,9 @@ button.btn:hover{
 ul.date{
 	background-color: white;
 	color: gray;
-	width: 795px;
+	width: 60%;
 	list-style-type: none;
-	margin-left: 355px;
+	margin-left: 20%;
 	padding: 0px;
 }
 div.sold{
