@@ -6,6 +6,8 @@ ul.navbar{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	width: 100%;
+	background-color: black;
 }
 li.li{
 	float: left;
@@ -13,7 +15,7 @@ li.li{
 li.li a.nav_entry{
 	background-color: black;
 	display: block;
-	padding: 14px 16px;
+	padding: 1vw;
 	color: white;
 	text-decoration: none;
 	font-size: 1vw;
@@ -36,7 +38,7 @@ a.style:hover{
   background-color: black;
   display: block;
   color: white;
-  padding: 0%;
+  padding: 0px;
   font-size: 1vw;
   border: none;
   cursor: pointer;
@@ -44,22 +46,23 @@ a.style:hover{
 
 .dropdown {
   position: relative;	
-  display: inline-block;
+  display: block;
 }
 
 .dropdown-content {
-  display: none;
+	display: none;
   position: absolute;
   background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 8vw;
+  box-shadow: 0vw 0.4vw 0.8vw 0vw rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
 	background-color: white;
   	color: black;
-  	padding: 14px 16px;
+	  padding: 1vw;
+	  font-size: 1vw;
  	text-decoration: none;
   	display: block;
 }
@@ -108,7 +111,7 @@ div.c{
 }
 div.temp{
 	width: 17%;
-	height: 15vw;
+	height: auto;
 	float: left;
 	background-color: black;
 	display: block;
@@ -117,9 +120,12 @@ div.temp{
 div.t{
 	background-color: white;
 	display: block;
+	height: auto;
 }
 div.d{
 	overflow: hidden;
+
+	
 }
 button.btn{
 	background-color: black;
@@ -128,9 +134,10 @@ button.btn{
 	margin-bottom: 0.5vw;
 	margin-left: 1%;
 	display: inline-block;
-	font-size: 1.5vw;
+	font-size: 1.2vw;
 	align-content: center;
-	padding: 2%;
+	padding: 3%;
+	margin-top: 2vw;
 }
 button.btn:hover{
 	background-color: gray;
@@ -140,59 +147,71 @@ ul.date{
 	background-color: white;
 	color: gray;
 	width: 60%;
+	height: auto;
 	list-style-type: none;
 	margin-left: 20%;
-	padding: 0px;
+	padding: 0.5%;
 }
 div.sold{
 	background-color: red;
 	float: right;
-	width: 65px;
+	width: auto;
 	color: white;
-	margin: 3px;
-	padding: 3px;
+	padding: 0.2%;
 }
 div.contact{
+	overflow: hidden;
 
 }
 div.w{
 	float: left
 }
-input[type=text] {
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #555;
-  outline: none;
-}
-input[type=text]:focus{
-	border-color: lightgreen; 
-}
-input[type=name] {
+div.form{
+	width: 30%;
 	float: left;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 1px solid #555;
-  outline: none;
+}
+input[type=name]{
+	font-size: 1vw;
+	padding: 0.5vw;
+	width: 40%;
+	float: left;
+	margin-bottom: 0.3vw;
 }
 input[type=name]:focus{
 	border-color: lightgreen;
 }
-input[type=Email] {
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #555;
-  outline: none;
+input[type=email]{
+	margin-left: 1%;
+	font-size: 1vw;
+	padding: 0.5vw;
+	float: left;
+	width: 40%;
+	margin-bottom: 0.3vw;
 }
-input[type=Email]:focus{
-	border-color: lightgreen; 
+input[type=email]:focus{
+	border-color: lightgreen;
+}
+input[type=text]{
+	font-size: 1vw;
+	padding: 0.5vw;
+	width: 85%;
+	margin-bottom: 0.3vw;
+}
+input[type=text]:focus{
+	border-color: lightgreen;
 }
 button.submit{
+	background-color:black;
+	color:white;
+	padding: 0.5vw;
+	font-size: 1.2vw;
+	width: 10vw;
 	border: none;
-	background-color: blue;
-	color: cornsilk;
+	margin-bottom: 5vw;
 }
-
+button.submit:hover{
+	background-color: gray;
+	color: black;
+}
 
 
